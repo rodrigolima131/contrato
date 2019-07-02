@@ -8,17 +8,17 @@ namespace Contrato.Entites
 {
     class Work
     {
-        public string name { get; set; }
-        public WorkerLevel level { get; set; }
-        public double baseSalary { get; set; }
+        public string Name { get; set; }
+        public WorkerLevel Level { get; set; }
+        public double BaseSalary { get; set; }
         public Departament Departament { get; set; }
         public List<HoursContract> Contracts { get; set; } = new List<HoursContract>();
 
         public Work(string name, WorkerLevel level, double baseSalary, Departament departament)
         {
-            this.name = name;
-            this.level = level;
-            this.baseSalary = baseSalary;
+            Name = name;
+            Level = level;
+            BaseSalary = baseSalary;
             Departament = departament;
 
 
@@ -39,7 +39,7 @@ namespace Contrato.Entites
         
         public double Income(int year,int month)
         {
-            double sum = baseSalary;
+            double sum = BaseSalary;
             foreach(HoursContract contract in Contracts)
             {
 
