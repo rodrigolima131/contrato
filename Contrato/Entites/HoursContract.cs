@@ -11,12 +11,24 @@ namespace Contrato.Entites
         public DateTime date { get; set; }
         public double valuePerHour { get; set; }
         public int hours { get; set; }
-        private double resultado;
+        
+
+
+        public HoursContract() {
+
+        }
+
+        public HoursContract(DateTime date, double valuePerHour, int hours)
+        {
+            this.date = date;
+            this.valuePerHour = valuePerHour;
+            this.hours = hours;
+        }
 
         public double totalValue()
         {
-            return resultado = hours * valuePerHour;
-            
+            return hours * valuePerHour;
+
         }
     }
 }
