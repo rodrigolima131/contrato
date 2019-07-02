@@ -8,5 +8,8 @@ namespace Contrato.Entites.Enums
 {
     enum WorkerLevel : int
     {
-    }
+       junior,
+       md_level,
+       senor,
+    };
 }
