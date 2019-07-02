@@ -8,6 +8,6 @@ namespace Contrato.Entites
 {
     class Departament
     {
-        
+        public string name { get; set; }
     }
 }
